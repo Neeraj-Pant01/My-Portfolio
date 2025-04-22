@@ -1,3 +1,5 @@
+/// <reference types="react" />
+import React from 'react';
 import {useEffect, useRef} from "react";
 
 
@@ -176,7 +178,7 @@ export default function PixelCard({
     noFocus,
     className = "",
     children
- }: PixelCardProps): JSX.Element {
+ }: PixelCardProps) {
 
     const containerRef = useRef<HTMLDivElement>(null);
     const canvasRef = useRef<HTMLCanvasElement>(null);

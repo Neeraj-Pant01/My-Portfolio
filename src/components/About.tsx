@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import profilePic from '../assets/profile.jpg';
 import SpotlightCard from './SpotlightCard';
-import PixelCard from './PixelCard';
 import TiltedCard from './TiltedCard';
 
 const containerVariants = {
