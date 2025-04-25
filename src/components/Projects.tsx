@@ -4,25 +4,25 @@ import SpotlightCard from './SpotlightCard';
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'A brief description of your first project and its key features.',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    image: '/project1.jpg',
-    link: '#',
+    title: 'EkisanDarshan',
+    description: 'eKisan Darshan is a digital platform for farmers.It provides real-time farming insights and expert guidance.Farmers can access market rates and government schemes.Empowering agriculture through technology and knowledge.',
+    technologies: ['NextJs', 'Node.js', 'Firebase'],
+    image: 'p1.png',
+    link: 'https://ekisandarshan.in/',
   },
   {
-    title: 'Project 2',
-    description: 'A brief description of your second project and its key features.',
-    technologies: ['TypeScript', 'Express', 'PostgreSQL'],
-    image: '/project2.jpg',
-    link: '#',
+    title: 'Favouser',
+    description: "Favouser is an e-commerce platform for stylish t-shirts and accessories.It offers a smooth shopping experience with modern UI.Features include product browsing, filtering, and secure checkout.",
+    technologies: ['TypeScript', 'Express', 'Mongodb', 'ReactJs'],
+    image: 'p2.png',
+    link: 'https://favouserauthentic.netlify.app/',
   },
   {
-    title: 'Project 3',
-    description: 'A brief description of your third project and its key features.',
-    technologies: ['Next.js', 'Tailwind CSS', 'Firebase'],
-    image: '/project3.jpg',
-    link: '#',
+    title: 'Teachercool',
+    description: 'Teachercool is an all-in-one online learning platform for students.Students can buy courses, attend classes, and track progress.Features include attendance, assignments, and performance insights for seamless digital education.',
+    technologies: ['ReactJs', 'Tailwind CSS', 'Python', 'RazorPay Payment Integration'],
+    image: 'p3.png',
+    link: 'https://teachercool.com/',
   },
 ];
 
@@ -76,19 +76,19 @@ const Projects = () => {
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
               >
-                <SpotlightCard 
+                <SpotlightCard
                   className="h-full"
                   spotlightColor={`rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.2)`}
                 >
                   <div className="flex flex-col h-full">
                     <div className="h-48 bg-gray-700 rounded-lg overflow-hidden mb-4">
                       {/* Replace with actual project image */}
-                      <div className="w-full h-full bg-gray-600" />
+                      <img src={project?.image} className="w-full h-full bg-gray-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-white mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-gray-300 mb-4 flex-grow">
+                    <p className="text-gray-300 mb-4 text-sm flex-grow">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -103,6 +103,7 @@ const Projects = () => {
                     </div>
                     <motion.a
                       href={project.link}
+                      target='_blank'
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-center"

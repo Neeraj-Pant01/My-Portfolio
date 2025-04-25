@@ -81,7 +81,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <p className="text-gray-400">Email</p>
-                        <p className="text-white">your.email@example.com</p>
+                        <p className="text-white">npant.personal@gmail.com</p>
                       </div>
                     </div>
                     <div className="flex items-center space-x-4">
@@ -93,9 +93,9 @@ const Contact = () => {
                       <div>
                         <p className="text-gray-400">Social</p>
                         <div className="flex space-x-4">
-                          <a href="#" className="text-white hover:text-blue-400 transition-colors">LinkedIn</a>
-                          <a href="#" className="text-white hover:text-blue-400 transition-colors">GitHub</a>
-                          <a href="#" className="text-white hover:text-blue-400 transition-colors">Twitter</a>
+                          <a href="https://www.linkedin.com/in/neeraj-pant-42488a239" target='_blank' className="text-white hover:text-blue-400 transition-colors">LinkedIn</a>
+                          <a href="https://github.com/Neeraj-Pant01?tab=repositories" target='_blank' className="text-white hover:text-blue-400 transition-colors">GitHub</a>
+                          <a href="https://x.com/NeerajPant48025?t=pytw-CDd0kBRmrecXO2_UQ&s=08" target='_blank' className="text-white hover:text-blue-400 transition-colors">Twitter</a>
                         </div>
                       </div>
                     </div>

@@ -10,6 +10,8 @@ const skills = [
       { name: 'TypeScript', level: 85 },
       { name: 'Next.js', level: 80 },
       { name: 'Tailwind CSS', level: 95 },
+      {name:'HTML & CSS', level:99},
+      {name:'JAVASCRIPT', level:90}
     ],
   },
   {
@@ -19,6 +21,8 @@ const skills = [
       { name: 'Express', level: 80 },
       { name: 'MongoDB', level: 75 },
       { name: 'PostgreSQL', level: 70 },
+      { name: 'Nest.js', level: 80 },
+      { name: 'Python', level: 70 },
     ],
   },
   {

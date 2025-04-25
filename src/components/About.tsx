@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/me.jpg';
 import SpotlightCard from './SpotlightCard';
 import TiltedCard from './TiltedCard';
 
