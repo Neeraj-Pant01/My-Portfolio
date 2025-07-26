@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import SpotlightCard from './SpotlightCard';
+import GradientText from './GradientText';
 
 const projects = [
   {
@@ -115,6 +116,14 @@ const Projects = () => {
               </motion.div>
             ))}
           </div>
+          <GradientText
+            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="custom-class mt-3"
+          >
+          <a href='https://github.com/Neeraj-Pant01' target='blank' className='float-right underline'>{"<<"} More {">>"}</a>
+          </GradientText>
         </motion.div>
       </div>
     </section>
